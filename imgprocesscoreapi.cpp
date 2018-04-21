@@ -22,6 +22,7 @@ void et::ThresholdValueProcess()
 
 void et::ThresholdValueProcess(int libName)
 {
+   //Select lib
    IImageLib* libs = __imgAPI.getLib(libName);
    libs->ThresholdValue(0,10,255);
 }
