@@ -6,8 +6,8 @@ Hide the class implement.
 This is threshold processing form openCV.<br />
 This is threshold processing form my image lib.<br />
 This is threshold processing form my image lib.<br />
-Destory my image lib.<br />
-Destory Opencv lib.<br />
-Destory my image lib.<br />
-Destory Opencv lib.<br />
+Destroy my image lib.<br />
+Destroy Opencv lib.<br />
+Destroy my image lib.<br />
+Destroy Opencv lib.<br />
 
