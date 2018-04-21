@@ -7,7 +7,7 @@ myImageLib::myImageLib()
 
 myImageLib::~myImageLib()
 {
-    std::cout<<"Destroy my image lib.\n";
+    std::cout<<"Destroy my image lib.\n ";
 }
 
 
