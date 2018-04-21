@@ -18,7 +18,7 @@ void MainWindow::TestAPI()
 {
     //we just konw the namespace et.
     et::ThresholdValueProcess();
-    et::ThresholdValueProcess(1);
+    et::ThresholdValueProcess(et::MYLIB);
 }
 
 void MainWindow::on_pushButton_7_clicked()
