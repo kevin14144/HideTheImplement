@@ -1,70 +1,10 @@
 #include "imgprocesscoreapi.h"
 //Hide the implement
 #include <iimagelib.h>
-#include <vector>
-
-#ifdef HAVE_OPENCV
-#include <opencv.h>
-static OpenCV __opencv;
-#endif
-
-#ifdef HAVE_MYIMGLIB
-#include <myimagelib.h>
-static myImageLib __myLib;
-#endif
-
-class ImgProcessCoreAPI
-{
-public :
-    ImgProcessCoreAPI();
-    ~ImgProcessCoreAPI();
-    IImageLib* getLib(int libIndex);
-private:
-    std::vector<IImageLib*> _libArray;
-
-};
-
-ImgProcessCoreAPI::ImgProcessCoreAPI()
-{
-    //lib manager by object.
-#ifdef HAVE_OPENCV
-    _libArray.push_back(new OpenCV());
-#endif
-
-#ifdef HAVE_MYIMGLIB
-    _libArray.push_back(new myImageLib());
-#endif
-
-}
-
-ImgProcessCoreAPI::~ImgProcessCoreAPI()
-{
-
-    if(!_libArray.empty())
-    {
-        int libNum = _libArray.size();
-        for(int i=libNum-1;i > 0;i--)
-        {
-            delete _libArray[i];
-            _libArray[i] = nullptr;
-            _libArray.pop_back();
-        }
-    }
-
-}
-
-IImageLib* ImgProcessCoreAPI::getLib(int libIndex)
-{
-    if(_libArray.empty())
-    {
-        throw;
-    }
-    return _libArray[libIndex];
-}
-
+#include <imglibmanager.h>
 
 //object life cycle follow process.
-static ImgProcessCoreAPI __imgAPI;
+static ImgLibManager __imgAPI;
 
 void et::ThresholdValueProcess()
 {

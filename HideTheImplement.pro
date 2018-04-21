@@ -29,14 +29,17 @@ SOURCES += \
     iimagelib.cpp \
     opencv.cpp \
     myimagelib.cpp \
-    imgprocesscoreapi.cpp
+    imgprocesscoreapi.cpp \
+    imgLibManager.cpp
 
 HEADERS += \
         mainwindow.h \
     iimagelib.h \
     opencv.h \
     myimagelib.h \
-    imgprocesscoreapi.h
+    imgprocesscoreapi.h \
+    imgLibManager.h \
+    libdefinecanuuse.h
 
 FORMS += \
         mainwindow.ui

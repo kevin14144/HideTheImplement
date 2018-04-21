@@ -1,7 +1,6 @@
 #ifndef IIMAGELIB_H
 #define IIMAGELIB_H
 
-
 class IImageLib
 {
 public:

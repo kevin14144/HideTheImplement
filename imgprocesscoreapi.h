@@ -1,12 +1,9 @@
 #ifndef IMGPROCESSCOREAPI_H
 #define IMGPROCESSCOREAPI_H
+#include <libdefinecanuuse.h>
 /*image library API
  * it contain two kind of image lib, it can switch by uplayer user.
 */
-
-// Manager form head file. which one can use.
-#define HAVE_OPENCV
-#define HAVE_MYIMGLIB
 
 namespace et {
 
