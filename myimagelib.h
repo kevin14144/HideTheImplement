@@ -13,7 +13,7 @@ public:
     ~myImageLib();
     // IImageLib interface
 public:
-    void ThresholdValue(int typeID, float threshold, float upperLimit);
+    void ThresholdValue(int /*typeID*/, float /*threshold*/, float /*upperLimit*/);
 
 private:
     std::vector<float> image;

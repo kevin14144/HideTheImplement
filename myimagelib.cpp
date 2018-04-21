@@ -7,11 +7,11 @@ myImageLib::myImageLib()
 
 myImageLib::~myImageLib()
 {
-    std::cout<<"Destory my image lib.\n";
+    std::cout<<"Destroy my image lib.\n";
 }
 
 
-void myImageLib::ThresholdValue(int typeID, float threshold, float upperLimit)
+void myImageLib::ThresholdValue(int, float, float)
 {
   std::cout<<"This is threshold processing form my image lib.\n";
 }

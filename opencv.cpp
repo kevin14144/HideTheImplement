@@ -7,7 +7,7 @@ OpenCV::OpenCV()
 
 OpenCV::~OpenCV()
 {
-     std::cout<<"Destory Opencv lib.\n";
+     std::cout<<"Destroy Opencv lib.\n";
 }
 
 void OpenCV::ThresholdValue(int, float, float)
