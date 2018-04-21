@@ -5,6 +5,11 @@ myImageLib::myImageLib()
 
 }
 
+myImageLib::~myImageLib()
+{
+    std::cout<<"Destory my image lib.\n";
+}
+
 
 void myImageLib::ThresholdValue(int typeID, float threshold, float upperLimit)
 {

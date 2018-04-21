@@ -17,10 +17,10 @@ ImgLibManager::~ImgLibManager()
     if(!_libArray.empty())
     {
         size_t libNum = _libArray.size();
-        for(size_t i=libNum-1;i > 0;i--)
+        for(size_t i=libNum;i > 0;i--)
         {
-            delete _libArray[i];
-            _libArray[i] = nullptr;
+            delete _libArray[0];
+            _libArray[0] = nullptr;
             _libArray.pop_back();
         }
     }

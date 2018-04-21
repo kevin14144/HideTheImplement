@@ -8,6 +8,7 @@ class OpenCV : public IImageLib
 {
 public:
     OpenCV();
+    ~OpenCV();
     // IImageLib interface
 public:
     void ThresholdValue(int /*typeID*/, float /*threshold*/, float /*upperLimit*/);

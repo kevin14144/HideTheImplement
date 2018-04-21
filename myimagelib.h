@@ -10,6 +10,7 @@ class myImageLib :public IImageLib
 
 public:
     myImageLib();   
+    ~myImageLib();
     // IImageLib interface
 public:
     void ThresholdValue(int typeID, float threshold, float upperLimit);
